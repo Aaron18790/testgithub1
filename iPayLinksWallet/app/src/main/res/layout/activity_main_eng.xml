@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="ServerURL"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/edit_server_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="input"
+                android:text="http://staticwap-us.innertest2.ipaylinks.com/static-wap/"
+                android:gravity="center_vertical|left"
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <!--http://staticwap-us.innertest2.ipaylinks.com/static/-->
+
+        <!--android:text="http://106.14.190.53:8580/static-wap/"-->
+        <!--android:text="http://172.168.2.149:8080/SDK/"-->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="MCHID"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/edit_partner_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="input"
+                android:text="200006743900"
+                android:gravity="center_vertical|left"
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+        <!--android:text="200006743900"-->
+        <!--android:text="200006743854"-->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="APP_ID"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/edit_app_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="input"
+                android:text="106"
+                android:gravity="center_vertical|left"
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="Interface"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+
+                android:entries="@array/sdkinterface"
+                android:id="@+id/spinner_interface"/>
+            <EditText
+                android:id="@+id/edit_interface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="input"
+                android:text=""
+                android:background="@null"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+      <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginTop="@dimen/sdk_margin_dp38"
+        android:orientation="horizontal">
+          <TextView
+          android:layout_width="@dimen/sdk_width_of_first_row"
+          android:layout_height="wrap_content"
+          android:text="Currency"
+          android:textColor="@color/color_black"
+
+              android:textSize="12dp"/>
+          <Spinner
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dip"
+
+              android:entries="@array/currency"
+              android:id="@+id/spinner_currency"/>
+          <EditText
+              android:id="@+id/edit_currency"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dip"
+              android:textColorHint="@color/text_hint_color"
+              android:textColor="@color/text_normal_color"
+              android:hint="input"
+              android:text=""
+              android:background="@null"
+              android:textSize="16sp"
+              android:visibility="invisible"
+              />
+      </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="Telco"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+
+                android:entries="@array/telco"
+                android:id="@+id/spinner_telco"/>
+            <EditText
+                android:id="@+id/edit_telco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="input"
+                android:text=""
+                android:background="@null"
+                android:visibility="invisible"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="短信或点卡"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+
+                android:entries="@array/cashcard_sms"
+                android:id="@+id/spinner_cashcard_sms"/>
+            <EditText
+                android:id="@+id/edit_cashcard_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="请输入"
+                android:text=""
+                android:background="@null"
+                android:visibility="invisible"
+                android:textSize="16sp"
+                />
+        </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="TransactionID"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/edit_outer_trade_no"
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="input transactionid"
+                android:text=""
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="Full Screen"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+
+            <RadioGroup android:id="@+id/radioGroup_isFullScreen" android:contentDescription="Full Screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioFullScreen" android:text="Yes" android:checked="true"></RadioButton>
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioNotFullScreen" android:text="No"></RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="landscape"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+
+            <RadioGroup android:id="@+id/radioGroup_isHorizon" android:contentDescription="landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radio_Horizon" android:text="Yes" ></RadioButton>
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radio_not_horizon" android:text="No" android:checked="true"></RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/edit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="price"
+                android:text=""
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="priceid"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/edit_priceid"
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="priceid"
+                android:text="1000"
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/edit_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="Product Name"
+                android:text="Milk"
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="Player ID"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/edit_buyer_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="Player ID"
+                android:text=""
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="Player ID Type"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/edit_buyer_id_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="Buyer ID Type"
+                android:text="UID"
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="Sim card I"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/edit_primary_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="Sim card I"
+                android:text="+6613600000000"
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="Sim card II"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/edit_second_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="Sim card II"
+                android:text="+6013600000000"
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/sdk_width_of_first_row"
+                android:layout_height="wrap_content"
+                android:text="extend"
+                android:textColor="@color/color_black"
+
+                android:textSize="12dp"/>
+            <EditText
+                android:id="@+id/edit_extend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_normal_color"
+                android:hint="extend"
+                android:text=""
+                android:background="@null"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sdk_margin_dp38"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_buy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Pay">
+
+            </Button>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>

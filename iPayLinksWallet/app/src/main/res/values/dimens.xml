@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="sdk_margin_dp38">38dip</dimen>
+    <dimen name="sdk_width_of_first_row">90dip</dimen>
+</resources>

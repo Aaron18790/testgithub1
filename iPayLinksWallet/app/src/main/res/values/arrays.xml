@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+    <array name="sdkinterface">
+
+        <item>BackendPsmsPay</item>
+        <item>BackendCashcardPay</item>
+        <item>WebPagePay</item>
+      <!--  <item>SDKPlusPay</item> -->
+
+    </array>
+        <array name="currency">
+            <item>THB</item>
+            <item>VND</item>
+            <item>MMK</item>
+            <item>IDR</item>
+            <item>MYR</item>
+            <item>SGD</item>
+            <item>PHP</item>
+            <item>DUP</item>
+            <item>DPA</item>
+            <item>null</item>
+        </array>
+        <array name="telco">
+            <item>mobifone</item>
+            <item>vinaphone</item>
+            <item>viettel</item>
+            <item>vcoin</item>
+            <item>zing</item>
+            <item>gate</item>
+            <item>null</item>
+         </array>
+         <array name="cashcard_sms">
+            <item>cashcard</item>
+            <item>sms</item>
+             <item>null</item>
+         </array>
+        <array name="interface_type">
+            <item>cashcard</item>
+            <item>sms</item>
+        </array>
+
+    </resources>

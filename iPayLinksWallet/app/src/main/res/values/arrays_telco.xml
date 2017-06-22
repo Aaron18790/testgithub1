@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    ///
+    <array name="THB">
+        <item>12call</item>
+        <item>truemoney</item>
+        <item>molpoints</item>
+        <item>dtachappy</item>
+        <item>null</item>
+    </array>
+    <array name="VND">
+        <item>mobifone</item>
+        <item>vinaphone</item>
+        <item>viettel</item>
+        <item>vcoin</item>
+        <item>zing</item>
+        <item>gate</item>
+        <item>null</item>
+    </array>
+    <array name="IDR">
+        <item>telkomsel</item>
+        <item>xl</item>
+        <item>indosat</item>
+        <item>hutch</item>
+        <item>null</item>
+    </array>
+    <array name="MYR">
+        <item>maxis</item>
+        <item>digi</item>
+        <item>celcom</item>
+        <item>null</item>
+    </array>
+    <array name="SGD">
+        <item>sintel</item>
+        <item>starhub</item>
+        <item>m1</item>
+        <item>null</item>
+    </array>
+    <array name="MMK">
+        <item>null</item>
+
+    </array>
+    <array name="PHP">
+        <item>null</item>
+
+    </array>
+</resources>
